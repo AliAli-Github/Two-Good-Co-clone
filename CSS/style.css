@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: font-three;
 }
 
 html,
@@ -25,4 +26,228 @@ body {
     height: 100%;
 }
 
+*::selection {
+    color: #fff;
+    background-color: black;
+}
 
+
+nav {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.2vw 1.2vw 0px 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    height: 82px;
+    overflow-y: hidden;
+    align-self: flex-start;
+}
+
+.logo svg {
+    display: block;
+}
+
+.nav-left {
+    display: flex;
+    align-self: flex-start;
+}
+
+.navigation {
+    margin: 0px 60px 0px 10px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 3vw;
+}
+
+.navigation ul li {
+    list-style: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.info-btn {
+    border-radius: 30px;
+    background-color: #fff;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 36px;
+    padding: 10px 14px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bar {
+    width: 18px;
+    height: 1px;
+    background-color: black;
+}
+
+.bar-one {
+    margin-bottom: 4.5px;
+}
+
+.bar-two {
+    margin-top: 4.5px;
+}
+
+.page-one {
+    width: 100%;
+    min-height: auto;
+}
+
+.heading-parent {
+    margin-top: 11.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elem-div {
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.elem-div h1 {
+    opacity: 0;
+    font-size: 16.5vw;
+    letter-spacing: -0.9vw;
+    line-height: 14vw;
+    font-family: font-two;
+    transform: translateY(100%);
+}
+
+.book-img-div {
+    overflow: hidden;
+    width: 100%;
+}
+
+.book-image {
+    position: relative;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.abs {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+#moving-svg {
+    width: 10vw;
+    height: 10vw;
+    animation-name: moving;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.moving-svg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+    font-family: font-two;
+}
+
+.page-two {
+    width: 100%;
+    height: auto;
+    padding: 0px 1vw;
+}
+
+.bd-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.bd-bottom h6 {
+    font-size: 12px;
+    color: #000;
+}
+
+@media screen and (max-width:1023px) {
+    .heading-parent {
+        margin-top: 22.5vw;
+    }
+
+    .navigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .heading-parent {
+        margin-top: 50vw;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .info-btn {
+        margin-top: 10px;
+    }
+
+    .abs {
+        position: absolute;
+        top: 15%;
+        left: 60%;
+    }
+
+    .book-image img {
+        width: 100vw;
+        height: 100vw;
+        object-fit: cover;
+    }
+
+    #moving-svg {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .moving-svg-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3vw;
+        font-family: font-two;
+    }
+
+    .page-two {
+        width: 100%;
+        height: auto;
+        padding: 0px 4vw;
+    }
+}
