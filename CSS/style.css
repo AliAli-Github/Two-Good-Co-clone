@@ -219,8 +219,8 @@ nav {
 }
 
 .card-details {
+    transition: height 0.2s ease;
     cursor: pointer;
-    transition: 0.3s ease;
     overflow: hidden;
     position: absolute;
     top: 50%;
@@ -261,6 +261,79 @@ nav {
     height: 244px;
 }
 
+.cards-bottom-content {
+    margin-top: 4vw;
+    display: flex;
+    gap: 30vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cards-bottom-content h2 {
+    font-size: 56px;
+    font-family: font-two;
+    line-height: 1em;
+}
+
+.cards-bottom-content>div {
+    margin-right: 8.5vw;
+}
+
+.cards-bottom-content>div p {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.cards-bottom-content>div button {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+
+.page-three {
+    padding: 0px 1vw;
+    width: 100%;
+    height: auto;
+}
+
+.products-div {
+    margin-top: 7.5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.products-div>div {
+    position: relative;
+}
+
+.products-div>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 100px;
+}
+
+.price {
+    width: 90%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.price p {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+    text-align: center;
+}
+
 @media screen and (max-width:1023px) {
     .heading-parent {
         margin-top: 22.5vw;
@@ -276,6 +349,36 @@ nav {
         grid-template-rows: repeat(3, 1fr);
         grid-row-gap: 15px;
     }
+
+    .cards-bottom-content {
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-bottom-content h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+
+    .cards-bottom-content>div {
+        margin-right: 0vw;
+    }
+
+    .cards-bottom-content>div p {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .cards-bottom-content>div button {
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width:599px) {
@@ -318,5 +421,17 @@ nav {
 
     .page-two {
         padding: 0px 4vw;
+    }
+
+    .cards-bottom-content {
+        margin-top: 8vw;
+    }
+
+    .page-three {
+        padding: 0px 4vw;
+    }
+
+    .products-div {
+        margin-top: 25.5vw;
     }
 }
