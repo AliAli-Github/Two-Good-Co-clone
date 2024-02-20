@@ -309,6 +309,7 @@ nav {
 }
 
 .products-div>div {
+    cursor: pointer;
     position: relative;
 }
 
@@ -332,6 +333,15 @@ nav {
     letter-spacing: 0.06em;
     line-height: 1.1;
     text-align: center;
+}
+
+.cursor {
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    background-color: #F5DFCF;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
 }
 
 @media screen and (max-width:1023px) {

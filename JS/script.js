@@ -56,3 +56,32 @@ gsap.to(".navigation", {
         scrub: true
     }
 })
+
+
+document.addEventListener("mousemove", (details) => {
+    gsap.to(".cursor", {
+        left: details.x,
+        top: details.y
+    })
+})
+
+var product_1 = document.querySelector("#pd1");
+var product_2 = document.querySelector("#pd2");
+var product_3 = document.querySelector("#pd3");
+var product_4 = document.querySelector("#pd4");
+
+document.querySelector(".products-div").addEventListener("mouseenter", (details) => {
+    gsap.to(".cursor", {
+        transform: `translate(-50%, -50%) scale(1)`,
+        left: details.x,
+        top: details.y
+    })
+})
+
+document.querySelector(".products-div").addEventListener("mouseleave", (details) => {
+    gsap.to(".cursor", {
+        transform: `translate(-50%, -50%) scale(0)`,
+        left: details.x,
+        top: details.y
+    })
+})
