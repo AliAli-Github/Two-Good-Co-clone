@@ -57,6 +57,7 @@ gsap.to(".navigation", {
     }
 })
 
+var cards = document.querySelector(".products-div");
 
 document.addEventListener("mousemove", (details) => {
     gsap.to(".cursor", {
@@ -65,12 +66,7 @@ document.addEventListener("mousemove", (details) => {
     })
 })
 
-var product_1 = document.querySelector("#pd1");
-var product_2 = document.querySelector("#pd2");
-var product_3 = document.querySelector("#pd3");
-var product_4 = document.querySelector("#pd4");
-
-document.querySelector(".products-div").addEventListener("mouseenter", (details) => {
+cards.addEventListener("mouseenter", (details) => {
     gsap.to(".cursor", {
         transform: `translate(-50%, -50%) scale(1)`,
         left: details.x,
@@ -78,7 +74,7 @@ document.querySelector(".products-div").addEventListener("mouseenter", (details)
     })
 })
 
-document.querySelector(".products-div").addEventListener("mouseleave", (details) => {
+cards.addEventListener("mouseleave", (details) => {
     gsap.to(".cursor", {
         transform: `translate(-50%, -50%) scale(0)`,
         left: details.x,

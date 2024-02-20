@@ -344,6 +344,67 @@ nav {
     transform: translate(-50%, -50%) scale(0);
 }
 
+.page-four {
+    width: 100%;
+    height: 100vh;
+    padding: 0px 1vw;
+}
+
+.wrapper {
+    margin-top: 10vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2.5vw;
+}
+
+.content-left {
+    padding-right: 11vw;
+}
+
+.content-left button {
+    font-family: font-one;
+    font-weight: 500;
+    padding-bottom: 8px;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.content-left h3 {
+    font-size: 1.5em;
+    line-height: 0.9;
+    font-weight: 500;
+    margin-bottom: 32px;
+    font-family: font-two;
+}
+
+.content-left p {
+    margin-bottom: 32px;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+}
+
+.images-div {
+    display: flex;
+    gap: 20px;
+}
+
+.images-div>div {
+    width: 100%;
+    height: 100%;
+}
+
+.images-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media screen and (max-width:1023px) {
     .heading-parent {
         margin-top: 22.5vw;
@@ -392,6 +453,10 @@ nav {
 }
 
 @media screen and (max-width:599px) {
+    .cursor {
+        display: none;
+    }
+
     .heading-parent {
         margin-top: 50vw;
     }
