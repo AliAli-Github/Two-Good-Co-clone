@@ -390,6 +390,7 @@ nav {
 }
 
 .images-div {
+    overflow: hidden;
     display: flex;
     gap: 20px;
 }
@@ -404,6 +405,45 @@ nav {
     height: 100%;
     object-fit: cover;
 }
+
+.footer-section {
+    padding: 0px 1vw;
+    width: 100%;
+    height: 200vh;
+}
+
+.news-letter-div {
+    position: relative;
+    margin-top: 2vw;
+}
+
+.news-letter-div input {
+    padding-top: 25px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 8px;
+    width: 100%;
+    outline: none;
+    font-size: 2.1vw;
+    color: #000;
+    font-family: font-two;
+    font-weight: 400;
+}
+
+.news-letter-div input::placeholder {
+    color: #000;
+    font-family: font-two;
+    font-weight: 400;
+    font-size: 2.1vw;
+}
+
+.news-letter-div i {
+    font-size: 25px;
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+}
+
 
 @media screen and (max-width:1023px) {
     .heading-parent {
@@ -450,6 +490,24 @@ nav {
         text-align: center;
     }
 
+    .wrapper {
+        margin-top: 10vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .content-left {
+        margin-top: 25px;
+        width: 710px;
+        order: 2;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .content-left {
+        width: auto;
+        order: 2;
+    }
 }
 
 @media screen and (max-width:599px) {
@@ -509,4 +567,15 @@ nav {
     .products-div {
         margin-top: 25.5vw;
     }
+
+    .page-four {
+        padding: 0px 4vw;
+    }
+
+    .images-div {
+        overflow: hidden;
+        display: flex;
+        gap: 15px;
+    }
+
 }
