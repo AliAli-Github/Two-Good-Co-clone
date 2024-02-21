@@ -407,14 +407,93 @@ nav {
 }
 
 .footer-section {
-    padding: 0px 1vw;
+    padding: 0px 1vw 57.5vw 1vw;
     width: 100%;
-    height: 200vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .news-letter-div {
+    width: 100%;
     position: relative;
     margin-top: 2vw;
+}
+
+.footer-center {
+    width: 100%;
+    margin-top: 210px;
+}
+
+.footer-center>div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-center>div>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-center>div>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-center>div>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+}
+
+.footer-center ul li {
+    list-style-type: none;
+    line-height: 1.4;
+}
+
+.footer-center ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-center>div>div:nth-child(1) h5 {
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 16px;
+}
+
+.footer-center>div>div:nth-child(3) h5 {
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 16px;
+}
+
+.footer-center svg {
+    width: 216px;
+    height: 215px;
+}
+
+.links {
+    margin-top: 88px;
+    font-size: 12px;
+    opacity: 0.5;
+    display: flex;
+    gap: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
 }
 
 .news-letter-div input {
@@ -438,10 +517,23 @@ nav {
 }
 
 .news-letter-div i {
-    font-size: 25px;
+    font-size: 23px;
     position: absolute;
     bottom: 30%;
     right: 0;
+}
+
+.last-para {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+.last-para p {
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 
@@ -505,8 +597,7 @@ nav {
 
 @media screen and (max-width:720px) {
     .content-left {
-        width: auto;
-        order: 2;
+        width: 100%;
     }
 }
 
