@@ -81,3 +81,39 @@ cards.addEventListener("mouseleave", (details) => {
         top: details.y
     })
 })
+
+var nav = document.querySelector(".nav");
+var logo = document.querySelector(".logo");
+var btn = document.querySelector(".info-btn");
+var navigation = document.querySelector(".navigation");
+var menu = document.querySelector(".menu");
+var bar = document.querySelector(".bar");
+var bar1 = document.querySelector(".bar-one");
+var bar2 = document.querySelector(".bar-two");
+var flag = 0;
+
+menu.addEventListener("click", () => {
+    if (flag == 0) {
+        flag += 1;
+        nav.style.transform = "translateY(0%)";
+        logo.style.zIndex = "1000";
+        logo.style.color = "white";
+        navigation.style.zIndex = "1000";
+        navigation.style.color = "white";
+        btn.style.zIndex = "1000";
+        btn.style.backgroundColor = "black";
+        btn.style.color = "white";
+        bar1.style.backgroundColor = "white";
+        bar2.style.backgroundColor = "white";
+    }
+    else {
+        flag -= 1;
+        nav.style.transform = "translateY(-100%)";
+        logo.style.color = "black";
+        navigation.style.color = "black";
+        btn.style.backgroundColor = "white";
+        btn.style.color = "black";
+        bar1.style.backgroundColor = "black";
+        bar2.style.backgroundColor = "black";
+    }
+});
