@@ -117,3 +117,19 @@ menu.addEventListener("click", () => {
         bar2.style.backgroundColor = "black";
     }
 });
+
+var pas = 0;
+menu.addEventListener("click", () => {
+    if (pas == 0) {
+        pas += 1;
+        gsap.to(".nav h1", {
+            delay: 0.2,
+            transform: "translateY(0%)"
+        });
+    } else {
+        pas -= 1;
+        gsap.to(".nav h1", {
+            transform: "translateY(100%)"
+        })
+    }
+});

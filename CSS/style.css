@@ -151,11 +151,10 @@ nav {
     align-items: flex-end;
 }
 
-.nav svg {
+.svg {
     color: white;
     width: 2.3vw;
     height: 2.3vw;
-    font-family: font-two;
 }
 
 .nav h1 {
@@ -165,6 +164,15 @@ nav {
     color: white;
     font-size: 4vw;
     font-family: font-two;
+}
+
+.nav-heading-parent {
+    overflow: hidden;
+    width: fit-content;
+}
+
+.nav-heading-parent h1 {
+    transform: translateY(100%);
 }
 
 .nav h5 {
@@ -198,7 +206,6 @@ nav {
 }
 
 .nav>div {
-    border: 2px solid white;
     margin-top: 110px;
     margin-bottom: 24px;
 }
@@ -746,17 +753,18 @@ nav {
         justify-content: flex-start;
         grid-column-start: 3;
         grid-row-start: 2;
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     .nav>div:nth-child(4) {
         grid-column-start: 3;
         grid-row-start: 1;
-        margin-right: 30px;
+        margin-right: 20px;
+        margin-bottom: 100px;
     }
 
     .nav h1 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .nav>div:nth-child(4) {
@@ -765,6 +773,12 @@ nav {
 
     .nav>div {
         margin-top: 0px;
+    }
+
+    .svg {
+        color: white;
+        width: 25px;
+        height: 25px;
     }
 
     .ul2,
@@ -876,5 +890,19 @@ nav {
 
     .links {
         margin-bottom: 20px;
+    }
+
+    .nav>div:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin-right: 10px;
+    }
+
+    .nav>div:nth-child(3) {
+        margin-right: 10px;
+    }
+
+    .nav>div:nth-child(1) {
+        margin-left: 10px;
     }
 }
