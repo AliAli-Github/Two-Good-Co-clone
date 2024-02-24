@@ -32,6 +32,36 @@ body {
 }
 
 
+/* Swiper CSS */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Swiper CSS */
+
+
 nav {
     z-index: 999;
     position: fixed;
@@ -115,7 +145,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     transform: translateY(-100%);
     display: grid;
@@ -627,6 +657,13 @@ nav {
     position: absolute;
     bottom: 30%;
     right: 0;
+}
+
+.carousel-section {
+    margin-top: 11vw;
+    padding: 0px 1vw;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width:1023px) {
