@@ -36,27 +36,75 @@ body {
 .swiper {
     width: 100%;
     height: 100%;
+    margin-top: 50px;
+    padding: 0px 2.8vw;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+    cursor: pointer;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.swiper-slide img {
+.swiper-slide p {
+    font-family: font-three;
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+    font-size: 24px;
+    line-height: 1em;
+    text-align: left;
+}
+
+.swiper-slide p:hover {
+    opacity: 0.5;
+}
+
+.swiper-slide>div {
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    transition: background 0.3s ease-out;
+}
+
+.circle {
+    background: black;
+}
+
+.carousel-section h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: font-two;
+    line-height: 1em;
+    font-size: 72px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.carousel-section button {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    line-height: 1em;
+    padding: 23px 70px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: none;
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin: auto;
+    border-radius: 30px;
 }
 
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
+.h1-parent {
+    display: grid;
+    grid-template-columns: 0.5fr 3.5fr 0.5fr;
+    grid-template-rows: auto;
+
 }
 
 /* Swiper CSS */
