@@ -133,9 +133,3 @@ menu.addEventListener("click", () => {
         })
     }
 });
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true
-});
